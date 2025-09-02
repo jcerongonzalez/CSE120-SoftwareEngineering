@@ -1,0 +1,88 @@
+9.2.25
+
+Chapter 1 Notes
+
+1.1 What is Software Construction?
+
+* Activites of Software development
+
+    1. Problem definition
+    2. Requirements development
+    3. Construction planning
+    4. Software architecture/high-level design
+    5. Detailed design
+    6. Coding and debugging
+    7. Unit testing 
+    8. Integration testing
+    9. Integration
+    10. System testing
+    11. Corrective maintenance
+
+* Construction is mostly coding and debugging but also involves detailed design
+    construction planning, unit testing, integration, and integration testing.
+
+* Construction is sometimes known as "coding" / "programming"
+
+* Specific tasks involved in construction:
+    1. Verifying groundwork has been laid so construction can proceed.
+    2. Determining how code will be tested
+    3. Designing and writing classes and routines
+    4. Creating and naming variables and named constants
+    5. Selecting control structures and organizing blocks of statements
+    6. Unit testing, integration testing, and debugging code.
+    7. Reviewing other team member's low-level designs and code and vice versa
+    8. Polishing code by formatting and commenting integration
+    9. Integrating software components that were created separately
+    10. Turning code to make it faster and use fewer resources. 
+
+
+
+1.2 Why is Software Construction Important?
+
+* Software Construction is the stage where developers actully write and build code that 
+    makes the software work. While requirements (planning what the software should do) 
+    and design (deciding how it should be built) are essential. The construction phase
+    is where those ideas are turned into reality.
+
+    This is important because:
+
+    1. It takes up a huge amount of time
+        - Construction usually takes 30%-80% of total project time.
+        - Quality and efficiency of construction strongly affect project success.
+    
+    2. Central activity in software development
+        - Requirements (what to build) and architecture (how to build it) come before construction
+        - Testing comes after construction
+        - Construction is the centerpiece of the process - the stage where everything
+            comes together.
+
+    3. Programmer producitivity varies a lot
+        - Studies show programmers are 10-20 times more productive than others during construction
+        - Later confirmed
+
+    4. Code is the most reliable documentation
+        - Design documents and requirement files often get out of date as project evolves
+        - Source code is always the most accurate up-to-date description of the software
+        - Critical to write clean, high-quality, and well-strucutured code b/c other programmers
+            will rely on it for understanding the system.
+
+    5. Construction always happens-even in rushed projects
+        - In ideal project
+            * Requirements are gathered carefully
+            * Solid architecture is designed
+            * Thoroughly tested after building.
+
+        - In real world:
+            * Where time is most spent
+            * Connects planning w/ testing
+            * Stage where programmers skill makes biggest difference
+            * Code written is ultimate, trustyworth record of system 
+            * Since construction is unavoidable, improving it benefits every project
+                not matter how rushed or well-planned. 
+
+
+1.3 How to read this book
+
+* Just tips on how to read this book, nothing too important
+
+

@@ -9,4 +9,3 @@ Chapter 2 Notes
 * Metphor in this context?
     - Comparing something hard to understand with something easier
     - Process of using an analogy to build understanding is called modeling
-
