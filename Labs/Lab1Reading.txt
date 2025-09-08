@@ -1,0 +1,236 @@
+09.08.25
+
+
+Lab 1 Reading
+
+
+Software Development Best Practices
+
+
+The Value of Software 
+
+* As Software becomes more essential and complex worldwise, the industry struggles to keep up - facing challenges
+    in advancing legacy systems, meeting demands for faster, higher-quality development, and dealing w/ a shortage
+    of skilled professionals - making it increasingly difficult to build and maintain reliable software. 
+
+Symptoms and root causes of software development problems
+
+* Symptoms of software project failures:
+    1. Inaccurate understanding of end-user needs
+    2. Inability to deal w/ changing requirements
+    3. Modules that don't fit together
+    4. Software that's hard to maintain or extend 
+    5. Late discovery of serious project flaws 
+    6. Poor software quality
+    7. Unacceptable software performance
+    8. Team members in each other's way, making it impossible to reconstruct who changed what, when,
+        where, and why.
+    9. Unstrustworthy build-and-release process 
+
+* Root cause of project failures:
+    1. Ad hoc requirements management
+    2. Ambiguous and imprecise communication
+    3. Brittle architectures
+    4. overwhelming complexity 
+    5. undetected inconsistencies in requirements, designs, and implementations.
+    6. Insufficient testing 
+    7. subjective project status assessment
+    8. Failure to attack risk
+    9. Uncontrollable change propagation
+    10. Insufficient automation
+
+Softare Best Practices 
+
+* Treating ROOT CAUSES will not only eliminate symptoms but will be in better position to develop quality software.
+
+* Best Practices:
+    1. Develop software iteratively
+    2. Manage requirements
+    3. Use component-based architectures
+    4. Visually model software
+    5. Verify software quality
+    6. Control changes to software 
+
+
+Develop Software iteratively
+
+* Waterfall life cycle: Development proceeds linearly from requirements analysis through design, code, 
+    and unit testing, subsystem testing, and system testing. 
+
+* Problem with WaterFall life cycle?
+    - Pushes risk forward in time making it costly to undo mistakes from earlier phases. 
+
+* Alternative to WaterFall life cycle?
+    - Iterative and incremental process 
+
+* Iterative and incremental cycle
+    - Identification of risks to a project is forced early in the life cycle, when it's possible to attack 
+        and react to them in a timely and efficient manner. 
+    - This approach is one of continuoys discovery; invention and implementation, with each iteration forcing 
+        the development team to drive the project's artififacts to closure in a predictable and repeatable way 
+    - This approach offers a number of solutions to root causes 
+
+* Solutions to root causes:
+    1. Serious misunderstanding are made evident early in the life cycle, when it's possible to react to them 
+    2. This approach enables and encourages user feedback so as to elicit the system's real requirements
+    3. Development team is forced to focus on those issues that are most critical to the project and are shielded 
+        from those issues that distract them from the project's real risks. 
+    4. Continuous, iterative testing enables an objective assessment of the project's status. 
+    5. Inconsistencies among requirements, designs, and implementations are detected early.
+    6. The workload of the team, especially the testing team, is spread out more evenly throughout the life cycle.
+    7. The team can leverage lessons learned and therefore can continuously improve the process.
+    8. Stakeholders in the project can be given concrete evidence of the project's status throughout the life cycle. 
+
+Manage requirements
+
+* Requirements (what a system must do) are never fixed. They change as the project evolves and as users better 
+    understand what they need.
+
+* Manage requirements means:
+    1. Gathering, organizing, and documenting them.
+    2. Evaluating changes and their impact
+    3. Keeping track of trade-offs and decisions.
+
+* Benefits:
+    - Clear communication w/ the team
+    - Prioritization and tracking of features 
+    - Easier detection of inconsistencies
+    - Centralized repository (w/ tools) keeps everything traceable
+
+Use component-based architectures
+
+* Architectures = the "blueprint" of the system (how it's organized, its parts, their connections, and how they behave)
+* Good architecture makes systems easier to reuse, maintian, and scale.
+* Component-based development (CBD) = building software from pre-made parts (LEGO)
+    - Common techs: COM, COBRA, EJB
+* Benefits: 
+    - Clear separation of responsibilities
+    - Reuse of existing, tested parts 
+    - Modular design = fewer dependencies
+    - Easier configuration management & testing 
+
+Visually Model Software 
+
+* A model = simplified view of the system to make it understandable
+* Why model? complex systems are too big to understand all at once.
+* UML (unified model language) is the standard for visual modeling
+* Benefits:
+    - Clarifies behvaior and structure w/ use cases, scenarios, and diagrams
+    - Reveals flaws earlyl
+    - Improves communication across the team
+    - Keeps requirements, design, and code consistent
+    - Makes complexity manageable 
+
+Verify Software Quality
+
+* Bugs are 100-1000x more expensive to fix after deployment than during development 
+* Quality should be continuously tested at every iteration 
+* Testing focuses on: 
+    - Functionality (does it do what it should?)
+    - Reliability, performance, and system behvaior
+* Benefits: 
+    - Project status is measured objectively (by tests, not opinions)
+    - Catches defects earlier = cheaper to fix 
+    - Focuses testing on risky areas
+    - Automated tools make testing faster and more reliable 
+
+
+Control Changes to software 
+
+* With many developers, teams, versions, and releases, chaos happens without control 
+* Change control ensures: 
+    - Defined and repeatable workflows for handling updates 
+    - Each iteration has a stable, tested baseline
+    - Traceability of change across version 
+* Benefits:
+    - Less team conflict (isolated workspaces)
+    - Clear communication of changes 
+    - Metrics (like change rates) show project health 
+    - Easier to manage and assess impact of changes 
+
+
+Rational Unified Process (RUP)
+
+* Software development process gives structure to a project. 
+* A good process should: 
+    1. Guide the order of activities
+    2. Specify which artifacts (documents, code, designs) to produce and when 
+    3. Direct tasks of developers and teams 
+    4. Provide criteria for measuring progress 
+
+* Without a process: work is ad hoc and depends on heroic individuals (unsustainable)
+* With a process: projects are repeatable, predictable, and improve over time
+* RUP = framework built on the 6 best practices to ensure quality and consistency 
+
+
+
+30 Key developmens & Testing Guidelines (Website)
+
+1. YAGNI (You ain't gonna need it)
+    - Don't code for imaginary future needs - it often becomes unused or needs rework. If you need it later, 
+        you'll redesign it more accurately
+
+2. Don't test what doesn't need it 
+    - You don't need to test external code like libraries or frameworks - only test OWN code 
+
+3. Extract code when reused 3x 
+    - When you've duplicated logic 3x, pull it into a helper that you can test & reuse 
+ 
+4. Keep APIs simple first 
+    - Make simple use cases easy - compelx ones optical. Avoid over-complicating API design 
+
+5. Fail fast 
+    - Detect invalid input or states early - give clear error messages immmediately 
+
+6. Test behavior, not implementation 
+    - Write tests against what your code does, not how it does it - so implementation changes don't break tests 
+
+7. Seek thorough test coverage 
+    - Aim for 100% coverage - skip untestable code only for good reasons (like impracticality)
+
+8. Less code, fewer problems 
+    - Write only what you need and delete unused code; code itself is a liability 
+
+9. Comments lie over time 
+    - Focus instead on self-explanatory code. When necesary, comment why the code exists, not what it's doing 
+
+10. Write defenseively 
+    - Anticipate failure scenarios and handle input - don't assume everything will always go right. 
+
+11. Separate logic from side-effects 
+    - Making logic stateless and side-effect free makes it easy to test. Move side-effects into separate, mockable areas 
+
+12. Avoid globals
+    - Prefer functions or objects over global variables or complex custom data types 
+
+13. Use built-ins 
+    - Built-in types and methods are typically better optimized than custom ones - use them when possible 
+
+14. Use dependency injection 
+    - Pass required dependencies into your functions or classes rather than creating them inside 
+
+15. Less mocking = better code 
+    - If your code requires al ot of mocking test, it's probably not structured well 
+
+16. Carefully desing external APIs 
+    - Changing public APIs later is hard and often breaks users - plan them thoughtfully while keeping simplicity
+
+17. Keep functions concise 
+    - Functions over 30 lines - or modules over 500 lines - should be broken down 
+
+18. Avoid work in constructors
+    - Putting logic in constructors makes code harder to test and unexpected 
+
+19. DRY isn't as importatn in test 
+    - Readable tests matter more than reduced repetition - you can duplicate code in tests if it improves clarity
+
+20. Refactor correctness before speed   
+    - Refactoring is essential to manage technical debt. Include its cost in project estimates
+
+21. Prioritize correctness before speed 
+    - Optimize only after measuring performance - write lcear code first 
+
+22. Keep unit tests small and fast 
+    - Tests should fail quickly and pinpoint problems - if a unit test is slow or broad, break it down 
+
+23. 
