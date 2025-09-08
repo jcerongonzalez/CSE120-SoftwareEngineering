@@ -233,4 +233,76 @@ Rational Unified Process (RUP)
 22. Keep unit tests small and fast 
     - Tests should fail quickly and pinpoint problems - if a unit test is slow or broad, break it down 
 
-23. 
+23. "Not Invented Here" isn't always bad 
+    - Writing your own code gives you control - but be mindful of unnecessary duplication 
+
+24. Share code ownership 
+    - Aim for collective understanding. Big surprises should be avoided at code review - discussion should happen earlier 
+
+25. Prefer generators for iteration 
+    - Generators are often simpler and clearer than stateful objects when iterating 
+
+26. Avoid over-engineering
+    - Build clean, robust systems - don't overdesign with unnecessary complexity 
+
+27. Fix flaky tests fast 
+    - Unreliable tests erode trust - delete or repair them promplty
+
+28. Avoid arbitrary delays in test 
+    - Don't use randomn sleep() calls - wait for specific conditions instead to keep tests fast and reliable 
+
+29. Verify your tests fail 
+    - Ensure your tests actually test something - introduce a known bug and confirm that the test catches it 
+
+30. Stop the endless feature grind 
+    - Let developers take pride in clean code. Don't ignore techical debt - it'll slow progress and harm quality. 
+
+
+
+Mobile App Development vs. Mobile Web Development: When, Why, and How 
+
+
+What's this article about?
+
+* Guide to help someone decide whether to build:
+    1. Mobile web app (runs on browser)
+    2. Native app (designed for a specific platform like iOS or Android)
+    3. Hybrid app (web-based inside native container)
+
+When and Why you might choose each approach 
+
+* Mobile Web Apps
+    - Great when: You need quick, cost-effective support across many devices
+    - Limitation: Can't access certain hardware features (accelerometer, camera) that native apps can 
+
+* Native apps
+    - Offer best performance and deep access to device features, but are costlier and need more development effort 
+        for each platform 
+    
+* Hybrid apps 
+    - Use web techs (HTML, CSS, JS) wrapped in a native shell 
+    - Balance between cost and functionality - they can access device features and are easier to maintain across platforms 
+
+Key Considerations in deciding 
+
+* User behavior matters. Stats how about 50% of users prefer using a mobile site over downloading an app
+* Time, budget, and quality trade-ffs. As the saying goes: "Faster, Better, Cheaper - pick any two" 
+    Never sacrifice user experience for cost or speed
+
+Building Mobile Web Apps: Best Practices 
+
+1. Plan Carefully. Identify what your app needs to do - and check early if those functions work in mobile browsers 
+2. Don't assume desktop code just works. Some features like video autoplay or CSS transitions might fail on mobile 
+3. Support various devices 
+    - Screen sizes change fast. 
+    - Use media queries for layout and responsize images 
+    - Detect and serve high-resolution assets, like Retina images 
+4. Boost Performance 
+    - Fast load times are essential - over 50% of mobile users abandon pages if they take over 3 seconds to load 
+    - Strategies: optimize images, minify code, cache server-side, and use CDNs for media-heavy content 
+5. Use the right tools 
+    - Popular JS frameworks: jQuery Mobile (legacy, HTML-centric) and Sencha Touch (richer UI, but steeper learning and closed architecture)
+    - Responsive CSS frameworks: Bootstrap and Foundation - Foundation is more flexible w/ layout resizing
+6. Test & Debug effectively 
+    - Chrome DevTools lets you emulate mobile behaviors, throttle networks, spoof devices, debug CSS/JS, inspect local storage 
+
